@@ -1,0 +1,354 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    font-family: 'Aleo', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+
+}
+  .top-section {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/home4.jpg');
+    background-size: cover;
+    height: 385px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+.content{
+padding-top: 8rem;
+}
+  .bottom-section {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0px;
+    height: 240px;
+  }
+
+  .white-box {
+    background-color: #fff;
+    padding: 10px;
+  }
+ .btn{
+     width: 100%;
+    
+ }
+ .text{
+     margin-left: 13%;
+     font-size: 0.8rem;
+ }
+.icon p{
+    margin: 1px;
+}
+.header{
+    padding-top: 0.6rem;
+  background:rgba(0, 0, 0, 0.774);
+  display: flex;
+  justify-content: space-between;
+}
+.one{
+    display: flex;
+}
+.two{
+    display: flex;
+}
+.three{
+    display: flex;
+}
+.circle {
+    border:1px solid black;
+    padding:5px 18px;
+    font-size: 1.5rem;
+    border-radius:50%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+} 
+.arrow{
+    position: relative;
+    left: 0.3rem;
+    top: -0.2rem;
+    color:lightgreen;
+    font-size:40px;
+     display:inline-block;
+      transform: scaleX(5);
+  }
+  .text{
+white-space: nowrap;
+color: white;
+font-size: 1rem;
+  }
+  .ar2{
+    position: relative;
+    left: -4.8rem;
+  }
+  .ar3{
+position: relative;
+left: -3.7rem;
+  }
+  .t1{
+      position: relative;
+      left: 3rem;
+  }
+  .t2{
+    position: relative;
+    left: 0.5rem;
+}
+.t3{
+    position: relative;
+    left: 1rem;
+}
+
+@media (min-width: 100px) and (max-width: 447px) {
+    .hed3 h1{
+        position: relative;
+        left: 3.5rem;
+          }
+    .arrow{
+        transform: scaleX(1);
+        position: relative;
+        left: -2.5rem;
+       }
+.ar2{
+    position: relative;
+    left: -3rem;  
+}
+.ar3{
+    position: relative;
+    left: -2.7rem; 
+}
+
+.t1{
+    position: relative;
+    left: 0.2rem;
+    font-size: 0.5rem;
+}
+.t2{
+  position: relative;
+  left: -0.2rem;
+  font-size: 0.5rem;
+  white-space: normal;
+}
+.t3{
+  position: relative;
+  left: 0rem;
+  font-size: 0.5rem;
+  white-space: normal;
+}
+  }
+
+
+
+@media (min-width: 448px) and (max-width: 649px) {
+  
+    .arrow{
+        transform: scaleX(1.6);
+        position: relative;
+        left: -1.6rem;
+       }
+.ar2{
+    position: relative;
+    left: -4rem;  
+}
+.ar3{
+    position: relative;
+    left: -3.6rem; 
+}
+
+.t1{
+    position: relative;
+    left: 1.6rem;
+    font-size: 0.5rem;
+}
+.t2{
+  position: relative;
+  left: 0rem;
+  font-size: 0.5rem;
+}
+.t3{
+  position: relative;
+  left: 0rem;
+  font-size: 0.5rem;
+}
+  }
+
+@media (min-width: 650px) and (max-width: 774px) {
+   .arrow{
+    transform: scaleX(3);
+    position: relative;
+    left: -1.2rem;
+   }
+   .ar2{
+    position: relative;
+    left: -5rem;  
+   }
+   .ar3{
+    position: relative;
+    left: -4.5rem;  
+   }
+   .t1{
+    position: relative;
+    left: 1.4rem;    
+    font-size: 0.8rem;
+   }
+   .t2{
+    position: relative;
+    left: 0rem;    
+    font-size: 0.8rem;
+   }
+   .t3{
+    position: relative;
+    left: 0rem;    
+    font-size: 0.8rem;
+   }
+  }
+
+.hed1{
+margin-top: -7rem;
+margin-bottom: 2rem;
+}
+.btn2{
+ width: 300px;
+}
+
+.ntt{
+font-weight: bolder;
+font-size: 1.2rem;
+}
+.textarea {
+    width: 80%; 
+    height: 60px; 
+    resize: none; 
+    margin-bottom: 19px;
+  }
+  .thankyou {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/thankyou.jpeg');
+background-size: contain;
+background-position: top;
+background-repeat: no-repeat;
+height: 100vh;
+text-align: center;
+color: #fff;
+}
+.box{
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+.bold{
+    font-weight: bolder;
+}
+.opacity{
+    opacity: 90%;
+}
+#btn1{
+background-color: limegreen;
+}
+#btn1:hover{
+    background-color: green;
+}
+#btn2{
+    background-color: limegreen;
+    color: black;
+}
+#btn2:hover{
+    background-color: green;
+    color: white;
+}
+#btn3{
+    border: none;
+    background-color: limegreen;
+    color: black;
+}
+#btn3:hover{
+    background-color: green;
+    color: white;
+}
+#btn4{
+    margin-left: 1rem;
+    width: 400px;
+    border: none;
+    background-color: limegreen;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+#btn4:hover{
+    background-color: green;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    z-index: 9999;
+  }
+
+  .overlay.fade-in {
+    opacity: 0.5;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+  .page2 h1{
+      font-size: 1.6rem;
+      margin-left: 5rem;
+  }
+  .page2 input{
+      height: 45px;
+      width: 300px;
+      margin-left: 4px;
+      margin-bottom: 2rem;
+      border: 2px solid black;
+  }
+  .hed2 h1{
+    font-size: 1.4rem;
+  }
+ .hed2{
+     font-weight: bolder;
+ }
+ .hed2 input{
+     margin-right: 10px;
+ }
+ .hed3 h1{
+    font-size: 1.4rem;
+    margin: 1.6rem 0;
+    margin-left: 6rem;
+ }
+ .adjust{
+     width: 400px;
+     height: 45px;
+     border: 2px solid black;
+     margin: 1.2rem 0;
+     margin-left: 0rem;
+ }
+.radio{
+    margin-top: 2rem;
+    margin-left: 0rem;
+}
+.thankyou h1{
+    font-size: 8rem;
+    margin-top: -6rem;
+}
+.thankyou h4{
+    font-size: 2.2rem;
+    margin-top: -1.5rem;
+}
+.thankyou h2{
+    font-size: 2.2rem;
+    margin-left: 40%;
+}
+.tn p{
+    margin-left: 40%; 
+    font-size: 1.2rem;
+}
+.box p{
+padding: 10px 20px;
+padding-bottom: 5rem;
+}

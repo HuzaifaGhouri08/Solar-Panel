@@ -1,0 +1,96 @@
+.header{
+    padding-top: 0.6rem;
+  display:flex;
+ justify-content: space-between;
+  flex-direction: row;
+  background:rgba(0, 0, 0, 0.774);
+}
+.circle {
+    border:1px solid black;
+    padding:5px 18px;
+    font-size: 1.5rem;
+    border-radius:50%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+} 
+.arrow{
+    position: relative;
+    right: 1rem;
+    top: -0.2rem;
+    color:green;
+    font-size:40px;
+     display:inline-block;
+      transform: scaleX(5);
+  }
+.text{
+    display:flex;
+min-width: 90px;
+color: white;
+font-size: 1rem;
+  }
+.one{
+    display: flex;
+    margin-left: 0.5rem;
+}
+.two{
+    display: flex;
+    position: relative;
+    right: 3.5rem;
+}
+.three{
+    display: flex;
+  position: relative;
+  right: 7.8rem;
+}
+
+@media (max-width: 460px) {
+  .arrow {
+      transform: scaleX(1);
+      position: relative;
+      right: 3rem;
+      font-size:40px;
+  }
+.text{
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  font-size: 0.5rem;
+}
+}
+
+
+@media (min-width: 448px) and (max-width: 673px) {
+  .arrow {
+      transform: scaleX(2);
+      position: relative;
+      right: 4.6rem;
+      font-size:40px;
+  }
+.text{
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+}
+
+
+@media (min-width: 674px) and (max-width: 772px) {
+  .arrow {
+      transform: scaleX(3);
+      position: relative;
+      right: 3.5rem;
+      font-size:40px;
+  }
+.text{
+  white-space: nowrap;
+}
+}
+
+@media (min-width: 773px) {
+  .arrow {
+      transform: scaleX(4);
+      position: relative;
+      right: 3rem;
+      font-size:40px;
+  }
+}

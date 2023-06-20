@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAGE 3</title>
+    <link rel="stylesheet" href="index.css">
+
+      <!-- Bootstrap CDN link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+   <!-- FontAwesome CDN link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <div id="overlay" class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row header">
+            
+          <div class="col-4 one">
+            <h1 class="circle" style="background-color: limegreen;">1</h1>
+            <p class="text t1">uw regio</p>
+            <span class="arrow ar1">&#10230;</span>
+          </div>
+
+          <div class="col-4 two">
+            <h1 class="circle" style="background-color: limegreen;">2</h1>
+            <p class="text t2">Project beschrijving</p>
+            <span class="arrow ar2">&#10230;</span>
+          </div>
+
+          <div class="col-4 three">
+            <h1 class="circle ">3</h1>
+            <p class="text t3">Ontvang offertes</p>
+            <span class="arrow ar3">&#10230;</span>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="text-center mt-2">
+        <h3>Ontvang gratis offertes van specialisten, vergelijk en bespaar tot 40%</h3>
+    </div>
+
+    
+    <div class="container-fluid hed3">
+
+       
+
+        <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 col-sm-4"><h1>Aanhef</h1></div>
+        <div class="col-lg-4 col-md-6 col-sm-4 d-flex flex-row gap-5">
+        <label>
+        <input class="radio" type="radio" name="option4" value="option1"> Dhr. 
+        </label>
+        <label>
+        <input class="radio" type="radio" name="option4" value="option1"> Mevr.
+        </label>
+        </div>
+        <div class="col-lg-4 col-sm-4 "></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4"><h1>Voornaam</h1></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 input"><input class="adjust" type="text" name="" id="Voornaam"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4"><h1>Achternaam</h1></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 input"><input class="adjust" type="text" name="" id="Achternaam"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4"><h1>Postcade</h1></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 input"><input class="adjust" type="text" name="" id="Postcade"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4"><h1>Postcode</h1></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 input"><input class="adjust" type="text" name="" id="Postcode"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div>
+    </div>
+
+    <div class="text-center">
+    <button id="btn4" onclick="valid()" class="btn btn-success btn2 text-center">Ga naar stap 3</button>
+            <p>100% Gratis & Vrijblijvend</p>
+    </div>
+
+</body>
+<script>
+
+function valid() {
+  
+let overlay = document.querySelector('#overlay');
+let Voornaam = document.querySelector(`#Voornaam`).value.trim();
+let Achternaam = document.querySelector(`#Achternaam`).value.trim();
+let Postcade = document.querySelector(`#Postcade`).value.trim();
+let Postcode = document.querySelector(`#Postcode`).value.trim();
+let option4Selected = isRadioSelected('option4');
+
+  if (option4Selected && Voornaam !== '' && Achternaam !== ''
+  && Postcade !== '' && Postcode !== '') {
+
+    overlay.classList.add('fade-in');
+setTimeout(function() {
+    window.location.replace("index4.html");
+    overlay.classList.remove('fade-in');
+}, 500);
+  } else {
+    alert('Please fill in all fields');
+  }
+}
+
+function isRadioSelected(name) {
+  var radios = document.getElementsByName(name);
+
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+</script>
+</html>
